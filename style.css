@@ -42,7 +42,7 @@ body::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 510px;
+  width: 540px;
   max-height: fit-content;
   background: var(--white);
   border-radius: 10px;
@@ -54,21 +54,24 @@ body::before {
   display: flex;
   align-items: center;
   h1 {
-    font-size: 45px;
+    font-size: 55px;
   }
   img {
-    width: 35px;
-    height: 35px;
-    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    margin: 0 15px 0 10px;
   }
 }
 
 .container .question-box {
   .question {
-    margin: 15px 0;
+    margin: 13px 0;
     .hidden {
       display: none;
     }
+  }
+  .question:not(:last-child, :first-child) {
+    border-bottom: 1px solid var(--light-pink);
   }
   .question-head:hover {
     p {
@@ -79,15 +82,17 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 12px 0;
     p {
       font-weight: 600;
       color: var(--dark-purple);
+      transition: 0.3s;
     }
   }
   .question-answer {
     color: var(--main-color);
     font-size: 14px;
     line-height: 1.5;
-    margin: 10px 0;
+    margin: 8px 0 10px;
   }
 }
